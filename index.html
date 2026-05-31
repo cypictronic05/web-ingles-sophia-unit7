@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit 7: Amazing Animals Quiz</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero screen active" id="start-screen" aria-labelledby="hero-title">
+        <div class="floating-animals" aria-hidden="true">
+          <span>🦜</span>
+          <span>🐘</span>
+          <span>🐒</span>
+          <span>🦒</span>
+        </div>
+
+        <div class="hero-content">
+          <p class="eyebrow">English Practice</p>
+          <h1 id="hero-title">Unit 7: Amazing Animals Quiz</h1>
+          <p class="subtitle">
+            Practice animals, adjectives, was/were, there was/there were and past simple.
+          </p>
+
+          <div class="score-pill" id="best-score-start">Best score: 0%</div>
+
+          <section class="study-tips" aria-labelledby="tips-title">
+            <h2 id="tips-title">Study Tips</h2>
+            <div class="tips-grid">
+              <article class="tip-card"><strong>Was</strong><span>I, he, she, it.</span></article>
+              <article class="tip-card"><strong>Were</strong><span>You, we, they.</span></article>
+              <article class="tip-card"><strong>There was</strong><span>Singular: one animal.</span></article>
+              <article class="tip-card"><strong>There were</strong><span>Plural: many animals.</span></article>
+              <article class="tip-card"><strong>Regular verbs</strong><span>Usually end in -ed.</span></article>
+              <article class="tip-card"><strong>Irregular verbs</strong><span>Change form.</span></article>
+            </div>
+          </section>
+
+          <button class="primary-btn" id="start-btn" type="button">Start Quiz</button>
+        </div>
+      </section>
+
+      <section class="quiz-card screen" id="quiz-screen" aria-live="polite">
+        <header class="quiz-header">
+          <div>
+            <p class="eyebrow" id="topic-label">Vocabulary</p>
+            <h2 id="question-counter">Question 1 of 25</h2>
+          </div>
+          <div class="score-pill" id="best-score-quiz">Best score: 0%</div>
+        </header>
+
+        <div class="progress-track" aria-hidden="true">
+          <div class="progress-fill" id="progress-fill"></div>
+        </div>
+
+        <div class="question-box">
+          <p id="question-text">Question text</p>
+        </div>
+
+        <div class="options-grid" id="options-grid"></div>
+
+        <p class="feedback" id="feedback" role="status"></p>
+
+        <div class="quiz-actions">
+          <button class="secondary-btn" id="restart-quiz-btn" type="button">Restart</button>
+          <button class="primary-btn next-btn" id="next-btn" type="button" disabled>Next</button>
+        </div>
+      </section>
+
+      <section class="result-card screen" id="result-screen" aria-labelledby="result-title">
+        <p class="eyebrow">Quiz Finished</p>
+        <h2 id="result-title">Your Result</h2>
+
+        <div class="result-summary">
+          <div>
+            <span id="correct-count">0</span>
+            <p>Correct</p>
+          </div>
+          <div>
+            <span id="incorrect-count">0</span>
+            <p>Incorrect</p>
+          </div>
+          <div>
+            <span id="percentage-score">0%</span>
+            <p>Score</p>
+          </div>
+        </div>
+
+        <p class="motivation" id="motivation-message"></p>
+        <div class="score-pill centered" id="best-score-result">Best score: 0%</div>
+
+        <section class="review-section" aria-labelledby="review-title">
+          <h3 id="review-title">Answer Review</h3>
+          <div class="review-list" id="review-list"></div>
+        </section>
+
+        <button class="primary-btn" id="try-again-btn" type="button">Try Again</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
